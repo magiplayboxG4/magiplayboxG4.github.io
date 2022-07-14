@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    background: none;
+}
+::selection {
+    color: #ffffff;
+    background: #2BB5E0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2BB5E0;
+    border-radius: .5rem;
+}
+body {
+    background: url(./big1.svg);
+}
+
+.wrapper {
+    margin: 0 10px;
+}
+
+.wrapper_inner {
+    position: relative;
+    max-width: 1250px;
+    width: 100%;
+    height: 700px;
+    background: #fff;
+    margin: 30px auto;
+    border-radius: 25px;
+    display: flex;
+}
+
+.vertical_wrap {
+    position: relative;
+    height: 100%;
+}
+
+.vertical_bar {
+    width: 250px;
+    background: #000000;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position: relative;
+}
+
+.vertical_bar .profile_info {
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.vertical_bar .profile_info img {
+    width: 100%;
+    height: 100%;
+}
+
+.vertical_bar .profile_info .title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #F5C312;
+    font-weight: 700;
+}
+.bak button{
+    color: white;
+    display: block;
+    width: 130px;
+    padding: 5px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid white;
+}
+.vertical_bar .profile_info .sub_title {
+    font-size: 14px;
+    color: #fff;
+}
+
+.vertical_bar .menu {
+    padding-left: 25px;
+}
+
+.vertical_bar .menu li a {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 10px;
+}
+
+.vertical_bar .menu li a .icon {
+    color: #c99c33;
+    width: 25px;
+    display: inline-block;
+}
+
+.vertical_bar .menu li a:hover {
+    background: #fff;
+    color: black;
+}
+
+.vertical_bar .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+}
+
+.vertical_bar .social li a {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 10px;
+}
+
+.vertical_bar .social li a:hover {
+    color: #F5C312;
+    background: #fff;
+}
+
+.main_container {
+    width: calc(100% - 250px);
+}
+
+.main_container .top_bar {
+    height: 60px;
+    background: black;
+    border-top-right-radius: 25px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.top_bar .hamburger {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    margin-right: 25px;
+}
+
+.top_bar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F5C312;
+}
+
+.top_bar .logo span {
+    color: #fff;
+}
+
+.main_container .container {
+    height: calc(100% - 60px);
+    overflow: auto;
+}
+
+.main_container .container .item {
+    background: url(./big1.svg);
+    background-size: cover;
+    padding: 50px;
+    margin-bottom: 25px;
+}
+
+.row1 {
+    background-color: rgb(5, 164, 227);
+    width: 30%;
+}
+
+h3 {
+    color: rgb(5, 164, 227);
+}
+
+span {
+    color: #F5C312;
+    display: inline-block;
+}
+
+.column {
+    float: left;
+    width: 45%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+.one {
+    width: 75%;
+    border-radius: 50%;
+    border: solid rgb(5, 164, 227) 2px;
+}
+
+.two {
+    width: 35%;
+    border-radius: 80%;
+    border: solid rgb(5, 164, 227) 2px;
+}
+
+.train {
+    width: 80%;
+}
+
+.F {
+    width: 45%;
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .top_bar .hamburger {
+        display: inline-block;
+    }
+    .vertical_wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        visibility: hidden;
+    }
+    .vertical_bar {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: left 0.2s linear;
+    }
+    .vertical_wrap .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 25px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .main_container {
+        width: 100%;
+    }
+    .main_container .top_bar {
+        border-top-left-radius: 25px;
+    }
+    .wrapper.active .vertical_wrap {
+        visibility: visible;
+    }
+    .wrapper.active .vertical_bar {
+        left: 0;
+        transition: left 0.2s linear;
+    }
+}
+
+.tagline{
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.tagline button{
+   background-color: #F5C312;
+   border: none;
+   height: 50px;
+   width: 75px;
+}
+.section-row h3{
+    color: var(--text-black-900);
+
+}
+.section-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+    align-content: center;
+    margin-top: 60px;
+}
+
+.content-column{
+    margin-top: 90px;
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 32%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px lightblue;
+    border-radius: 10px;
+}
+.content-column:hover{
+    transform: scale(1.05);
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.icon .fa {
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+.icon .fa:hover{
+    color:#F5C312;
+}
+
+.section-row .content-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.section-row .content-column h5{
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.section-row .content-column p {
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+    margin-left: 5px;
+    text-align: center;
+}

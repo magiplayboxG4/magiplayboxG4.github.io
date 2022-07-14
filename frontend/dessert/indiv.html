@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="short icon" href="./Photos/short icon.png">
+	<title>Hackathon</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="jquery1.js"></script>
+    <script src="./confetti.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper_inner">
+            <div class="vertical_wrap">
+                <div class="backdrop"></div>
+                <div class="vertical_bar">
+                    <div class="profile_info">
+                        <div class="img_holder">
+                            <img src="./Photos/logo.png">
+                        </div>
+                        <p class="title">Dessert</p>
+                        <p class="sub_title">Be a part of our journey!</p>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html" class="active">
+                                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-building" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566ZM9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276ZM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71Z" />
+                                    </svg></span>
+                                <span class="text">Future Projects</span>
+                            </a></li>
+
+                        <li><a href="OJT.html">
+                                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-person-hearts" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+                                        <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+                                    </svg></span>
+                                <span class="text">Games</span>
+                            </a></li>
+
+                    </ul>
+
+                    <ul class="social">
+                        <li><img src="./Photos/back.png" alt=""></li>
+                        <li><a href="../static/index.html">Back</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="top_bar">
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        Passerelles Numeriques <span>Recreation</span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div id="link_container">
+                        <h1>Create the Best!</h1>
+                        <center>
+
+
+                            <div class="content">
+                                <div class="item">
+                                    <p class="left"> <b> Estimated Project Cost:</b> <u>$4000</u><br> Materials
+                                        Price: <b id="demo"> </b></p>
+                                    <p><b> Player: <span>John Doe</span></b>
+                                        <br>No. of Player/s: 1 </p>
+
+                                    <br>
+                                    <div id="b">
+                                        <h3 style="color:white;">Project: Mini Study Room</h3><br>
+                                        <h4 id="s" style=" color:White">Materials Needed: </h4>
+
+                                        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                                            <img onclick="myFunction()" src="./Photos/table-removebg-preview.png" draggable="true"
+                                                ondragstart="drag(event)" id="drag1" width="88" height="31">
+
+                                        </div>
+                                        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                                            <img onclick="myFunction1()" src="./Photos/comset-removebg-preview.png" draggable="true"
+                                                ondragstart="drag(event)" id="drag11" width="88" height="31">
+
+                                        </div>
+                                        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                                            <img onclick="myFunction2()" src="./Photos/chair-removebg-preview.png" draggable="true"
+                                                ondragstart="drag(event)" id="drag11a" width="88" height="31">
+
+                                        </div>
+                                        <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                                            <img onclick="myFunction3()" src="./Photos/1-removebg-preview.png" draggable="true"
+                                                ondragstart="drag(event)" id="drag11b" width="88" height="31">
+
+                                        </div>
+                                        <h4 id="s" style=" color:White">Instruction: <span>
+                                                <h5>Below is a vacant area,
+                                                    choose from the materials above that are best to use in making a
+                                                    Mini Study
+                                                    Room.</h5>
+                                            </span> <br>Note: <span>
+                                                <h5>By clicking each materials you can view its' actual price
+                                                    above. Have Fun!</h5>
+                                            </span></h4>
+                                        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                                            <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                            <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                            <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="button1">
+
+                                        <button class='open' id="b1">
+                                            <span>
+                                                Finish
+                                            </span>
+
+                                        </button>
+                                        <div class="box">
+                                            <div class="imgBox">
+                                                <img style="width: 50%; margin: 2px;" src="./Photos/prof.png" alt="" />
+                                            </div>
+                                            <h2 class="title">You've Earned The Profile Setter Badge! 🌟</h2>
+                                            <p>
+                                                The estimated Cost for this Mini Study Room Project is $4000. Once this
+                                                will be implemented at Passerelles Numeriques, it would really help a
+                                                lot of students to thrive hard for their future. Do you want to do you
+                                                part of this?<a style="color:rgb(34, 101, 226);" href="#"> <b>Donate
+                                                        Now!</b> </a>
+
+                                            </p>
+
+                                            <div class="btnContainer">
+                                                <button class="close">Later</button>
+                                            </div>
+                                        </div>
+
+                                        <button id="b2">
+                                            <span>
+                                              <a href="./Photos/OJT.html">Cancel</a>  
+                                            </span>
+
+                                        </button>
+                                    </div>
+
+
+
+
+
+
+                                    <!--   <div>
+                                        <h3 id="s" style=" color:White">Future Area</h3>
+                                        <img src="" alt="">
+                                    </div>
+                                -->
+                                </div>
+                            </div>
+
+                        </center>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var confetti = {
+            maxCount: 150, speed: 2, frameInterval: 15, alpha: 1,
+            gradient: !1, start: null, stop: null, toggle: null, pause: null, resume: null,
+            togglePause: null, remove: null, isPaused: null, isRunning: null
+        };
+        !function () {
+            confetti.start = s, confetti.stop = w, confetti.toggle = function () { e ? w() : s() }, confetti.pause = u, confetti.resume = m, confetti.togglePause = function () { i ? m() : u() },
+                confetti.isPaused = function () { return i }, confetti.remove = function () { stop(), i = !1, a = [] },
+                confetti.isRunning = function () { return e };
+            var t = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame, n = ["rgba(30,144,255,", "rgba(107,142,35,", "rgba(255,215,0,", "rgba(255,192,203,", "rgba(106,90,205,", "rgba(173,216,230,", "rgba(238,130,238,", "rgba(152,251,152,", "rgba(70,130,180,", "rgba(244,164,96,", "rgba(210,105,30,", "rgba(220,20,60,"], e = !1, i = !1, o = Date.now(), a = [], r = 0, l = null;
+            function d(t, e, i) { return t.color = n[Math.random() * n.length | 0] + (confetti.alpha + ")"), t.color2 = n[Math.random() * n.length | 0] + (confetti.alpha + ")"), t.x = Math.random() * e, t.y = Math.random() * i - i, t.diameter = 10 * Math.random() + 5, t.tilt = 10 * Math.random() - 10, t.tiltAngleIncrement = .07 * Math.random() + .05, t.tiltAngle = Math.random() * Math.PI, t }
+            function u() { i = !0 } function m() { i = !1, c() } function c() {
+                if (!i) if (0 === a.length) l.clearRect(0, 0, window.innerWidth, window.innerHeight), null;
+                else {
+                    var n = Date.now(), u = n - o; (!t || u > confetti.frameInterval) && (l.clearRect(0, 0, window.innerWidth, window.innerHeight),
+                        function () {
+                            var t, n = window.innerWidth, i = window.innerHeight; r += .01;
+                            for (var o = 0; o < a.length; o++)t = a[o], !e && t.y < -15 ? t.y = i + 100 : (t.tiltAngle += t.tiltAngleIncrement, t.x += Math.sin(r) - .5, t.y += .5 * (Math.cos(r) + t.diameter + confetti.speed), t.tilt = 15 * Math.sin(t.tiltAngle)), (t.x > n + 20 || t.x < -20 || t.y > i) && (e && a.length <= confetti.maxCount ? d(t, n, i) : (a.splice(o, 1), o--))
+                        }(),
+                        function (t) {
+                            for (var n, e, i, o, r = 0; r < a.length; r++) {
+                                if (n = a[r], t.beginPath(), t.lineWidth = n.diameter, i = n.x + n.tilt, e = i + n.diameter / 2, o = n.y + n.tilt + n.diameter / 2, confetti.gradient) { var l = t.createLinearGradient(e, n.y, i, o); l.addColorStop("0", n.color), l.addColorStop("1.0", n.color2), t.strokeStyle = l }
+                                else t.strokeStyle = n.color; t.moveTo(e, n.y), t.lineTo(i, o), t.stroke()
+                            }
+                        }(l), o = n - u % confetti.frameInterval), requestAnimationFrame(c)
+                }
+            }
+            function s(t, n, o) {
+                var r = window.innerWidth, u = window.innerHeight; window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                    function (t) { return window.setTimeout(t, confetti.frameInterval) }; var m = document.getElementById("confetti-canvas");
+                null === m ? ((m = document.createElement("canvas")).setAttribute("id", "confetti-canvas"), m.setAttribute("style", "display:block;z-index:999999;pointer-events:none;position:fixed;top:0"), document.body.prepend(m), m.width = r, m.height = u, window.addEventListener("resize",
+                    function () { m.width = window.innerWidth, m.height = window.innerHeight }, !0), l = m.getContext("2d")) : null === l && (l = m.getContext("2d")); var s = confetti.maxCount; if (n) if (o) if (n == o) s = a.length + o; else { if (n > o) { var f = n; n = o, o = f } s = a.length + (Math.random() * (o - n) + n | 0) } else s = a.length + n;
+                else o && (s = a.length + o); for (; a.length < s;)a.push(d({}, r, u)); e = !0, i = !1, c(), t && window.setTimeout(w, t)
+            } function w() { e = !1 }
+        }();</script>
+    <script src="../confetti.min.js"></script>
+    <script>
+        const openbtn = document.querySelector(".open");
+        const modal = document.querySelector('.box');
+        const closeBtn = document.querySelector('.close');
+        // we are saying that when we click This
+        openbtn.addEventListener("click", () => {
+            modal.classList.add('visible')
+            openbtn.classList.add('hidden');
+            const startit = () => {
+                setTimeout(function () {
+                    confetti.start();
+                }, 1000);
+            };
+            // Stops
+            const stopit = () => {
+                setTimeout(function () {
+                    confetti.stop();
+                }, 5000);
+            };
+            // playing start
+            startit();
+            // stoping it
+            stopit();
+        });
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('visible')
+            openbtn.classList.remove('hidden');
+
+        })
+        const openbtn1 = document.querySelector(".open1");
+        const modal1 = document.querySelector('.box1');
+        const closeBtn1 = document.querySelector('.close1');
+        // we are saying that when we click This
+        openbtn1.addEventListener("click", () => {
+            modal1.classList.add('visible')
+            openbtn1.classList.add('hidden');
+            const startit = () => {
+                setTimeout(function () {
+                    confetti.start();
+                }, 1000);
+            };
+            // Stops
+            const stopit = () => {
+                setTimeout(function () {
+                    confetti.stop();
+                }, 5000);
+            };
+            // playing start
+            startit();
+            // stoping it
+            stopit();
+        });
+        closeBtn1.addEventListener('click', () => {
+            modal1.classList.remove('visible')
+            openbtn1.classList.remove('hidden');
+
+        })
+    </script>
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        var wrapper = document.querySelector(".wrapper");
+        var backdrop = document.querySelector(".backdrop");
+
+        hamburger.addEventListener("click", function () {
+            wrapper.classList.add("active");
+        })
+
+        backdrop.addEventListener("click", function () {
+            wrapper.classList.remove("active");
+        })
+
+    </script>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "$100";
+        } function myFunction1() {
+            document.getElementById("demo").innerHTML = "$200";
+        }
+        function myFunction2() {
+            document.getElementById("demo").innerHTML = "$70";
+        }
+        function myFunction3() {
+            document.getElementById("demo").innerHTML = "$200";
+        }
+        const div1a = document.querySelector("div1")
+        if (event.target.nodeName !== "drag1") {
+            event.target.appendChild(document.getElementById(div1a));
+        }
+
+    </script>
+    <script>
+        $('button').on('click', function () {
+            function random(max) {
+                return Math.random() * (max - 0) + 0;
+            }
+
+            var c = document.createDocumentFragment();
+            for (var i = 0; i < 100; i++) {
+                var styles = 'transform: translate3d(' + (random(500) - 250) + 'px, ' + (random(200) - 150) + 'px, 0) rotate(' + random(360) + 'deg);\
+                  background: hsla('+ random(360) + ',100%,50%,1);\
+                  animation: bang 700ms ease-out forwards;\
+                  opacity: 0';
+
+                var e = document.createElement("i");
+                e.style.cssText = styles.toString();
+                c.appendChild(e);
+            }
+            // document.body.appendChild(c);
+            $(this).append(c);
+        })</script>
+
+    <!-- <script>
+        const div1a = document.querySelector("div1");
+        const
+            yaGetBanner();
+        function yaGetBanner() {
+            var el = document.getElementById("");
+            el.innerHTML = "<img src=\"table-removebg-preview.png\" width=\"400px\" height=\"150px\">";
+        }
+    </script>'; -->
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
